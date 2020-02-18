@@ -51,7 +51,7 @@ describe '../lib/turn.rb' do
 
   describe '#valid_move?' do
     it 'returns true/false based on index' do
-      board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
+      board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
       index = 0 
       expect(valid_move?(board, index)).to be_truthy
