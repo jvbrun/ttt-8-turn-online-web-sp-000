@@ -53,11 +53,11 @@ describe '../lib/turn.rb' do
     it 'returns true/false based on index' do
       board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
 
-      index = 1
+      index = 0 
       expect(valid_move?(board, index)).to be_truthy
 
-      index = 5
-      expect(valid_move?(board, index)).to be_falsey
+      index = 4
+      expect(valid_move?(board, index)).to be_truthy
 
       index = -1
       expect(valid_move?(board, index)).to be_falsey
